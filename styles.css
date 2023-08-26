@@ -489,3 +489,33 @@ select{
 #books__main{
     background-color:  rgba(115, 66, 214, 0.1);
 }
+
+.books__loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    font-size: 48px;
+    color: #7342dc;
+}
+
+.fa-spinner{
+    animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.book__loading--spinner{
+    display: none !important;
+}
+
+.books__loading .book__loading--spinner{
+    display: block !important;
+}
